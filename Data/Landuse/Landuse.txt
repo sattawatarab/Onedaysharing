@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" version="1.0.0">
+    <sld:UserLayer>
+        <sld:LayerFeatureConstraints>
+            <sld:FeatureTypeConstraint/>
+        </sld:LayerFeatureConstraints>
+        <sld:UserStyle>
+            <sld:Name>LUBBK</sld:Name>
+            <sld:Title/>
+            <sld:FeatureTypeStyle>
+                <sld:Name>name</sld:Name>
+                <sld:Rule>
+                    <sld:RasterSymbolizer>
+                        <sld:Geometry>
+                            <ogc:PropertyName>grid</ogc:PropertyName>
+                        </sld:Geometry>
+                        <sld:ColorMap type="values">
+                            <sld:ColorMapEntry color="#FFF68F" opacity="0.4" quantity="1" label="Mix Agriculture"/>
+                            <sld:ColorMapEntry color="#008000" opacity="0.4" quantity="2" label=" forest"/>
+                            <sld:ColorMapEntry color="#FFC1C1" opacity="0.4" quantity="3" label=" City and Buildings"/>
+                            <sld:ColorMapEntry color="#00FFFF" opacity="0.4" quantity="4" label=" Water"/>
+                            <sld:ColorMapEntry color="#8080FF" opacity="0.4" quantity="5" label=" Industrial areas"/>
+                            <sld:ColorMapEntry color="#C0C0C0" opacity="0.4" quantity="6" label=" Other "/>
+                            <sld:ColorMapEntry color="#000000" opacity="0.0" quantity="255" label="No data"/>
+                        </sld:ColorMap>
+                    </sld:RasterSymbolizer>
+                </sld:Rule>
+            </sld:FeatureTypeStyle>
+        </sld:UserStyle>
+    </sld:UserLayer>
+</sld:StyledLayerDescriptor>
+
