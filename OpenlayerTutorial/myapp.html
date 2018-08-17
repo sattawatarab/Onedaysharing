@@ -57,7 +57,7 @@
         btnShowWms.onclick =  function() {
             removeExistingWms();
             var wmsSourceProvince = new ol.source.ImageWMS({
-                url: 'http://161.246.52.123:8080/geoserver/AgroSmart/wms?',
+                url: 'http://localhost/geoserver/test/wms?',
                 params: {
                     'LAYERS': 'Community_water'
                 },
