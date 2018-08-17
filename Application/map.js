@@ -1,7 +1,7 @@
 var wmsSourceAmphoe = new ol.source.ImageWMS({
-    url: 'http://192.168.1.33:8079/geoserver/SmallWaterArea/wms',
+    url: 'http://localhost/geoserver/test/wms',
     params: {
-        'LAYERS': 'SmallWaterArea:WaterSource'
+        'LAYERS': 'test:WaterSource'
     },
     crossOrigin: 'anonymous'
 });
@@ -11,9 +11,9 @@ var wmsLayerchonburi = new ol.layer.Image({
 });
 
 var wmsSourceDam = new ol.source.ImageWMS({
-    url: 'http://192.168.1.33:8079/geoserver/SmallWaterArea/wms',
+    url: 'http://localhost/geoserver/test/wms',
     params: {
-        'LAYERS': 'SmallWaterArea:Dam'
+        'LAYERS': 'test:Dam'
     },
     crossOrigin: 'anonymous'
 });
